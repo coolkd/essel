@@ -1,0 +1,20 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Travel B2C">
+	<test name="BookingFlow">
+		<classes>
+			<class name="b2c.BookingWidgetTest"></class>
+			<class name="b2c.SearchPageTest"></class>
+		</classes>
+	</test>
+	<test name="LoginFlow">
+		<classes>
+			<class name="b2c.LoginPageTest" />
+			<class name="b2c.HomePageTest" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
+
+
+	
