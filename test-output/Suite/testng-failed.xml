@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="b2c.BookingWidgetTest">
+        <methods>
+          <include name="selectAdultAndChild"/>
+          <include name="setup"/>
+          <include name="waitForEachTest"/>
+          <include name="goToLoginPage"/>
+          <include name="selectAdultAndChildWithZero"/>
+          <include name="cleanup"/>
+        </methods>
+      </class> <!-- b2c.BookingWidgetTest -->
+      <class name="b2c.LoginPageTest">
+        <methods>
+          <include name="waitForEachTest"/>
+          <include name="validCredential"/>
+          <include name="setup"/>
+          <include name="goToLoginPage"/>
+          <include name="cleanup"/>
+        </methods>
+      </class> <!-- b2c.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

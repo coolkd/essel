@@ -1,7 +1,8 @@
 package pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -31,8 +32,10 @@ public class ResultPage {
 
 	By paxAddress = By.xpath("//textarea[@placeholder='Address*']");
 
-	By selectState = By.xpath(
-			"//div[contains(@id,'state')]//div[@class='ui-selectonemenu-trigger ui-state-default ui-corner-right']");
+	By selectState = By.xpath("//label[contains(text(),'Select State')]");
+
+	By selectState1 = By.xpath(
+			"//li[@class='ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all'][contains(text(),'Maharashtra')]");
 
 	By selectCityDropdown = By.xpath(
 			"//div[contains(@id,'city')]//div[@class='ui-selectonemenu-trigger ui-state-default ui-corner-right']");
@@ -98,8 +101,16 @@ public class ResultPage {
 
 	public void getState() {
 		driver.findElement(selectState).click();
-		driver.findElement(selectState).sendKeys(Keys.ARROW_DOWN);
-		driver.findElement(selectState).sendKeys(Keys.ENTER);
+
+		try {
+			TimeUnit.SECONDS.sleep(2);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(selectState1).click();
+
+		// driver.findElement(selectState).sendKeys(Keys.ENTER);
 	}
 
 	public void getCity() {
@@ -136,7 +147,7 @@ public class ResultPage {
 	public void clickReturnToMerchant() {
 		driver.findElement(returnToMerchant).click();
 	}
-	
+
 	public void handleAlert() {
 		driver.switchTo().alert().accept();
 	}

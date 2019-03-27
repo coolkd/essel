@@ -1,6 +1,13 @@
-.classpath
-.project
-.settings*
 
-target
-test-output
+
+
+/home/kuldeep/workspace/TravelB2C
+
+
+DHURANDHAR PRASHAD
+ACC NO 316105057-0
+PURVANCHAL GRAMIN BANK
+FARDAHANI BRANCH
+
+("//li[@class='resp-tab-item resp-tab-active']//div[@class='activityTitle']");
+/target/

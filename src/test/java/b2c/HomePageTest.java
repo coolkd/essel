@@ -1,15 +1,13 @@
 package b2c;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import pages.HomePage;
 import resources.BasePageTest;
 import resources.PropertyLoader;
 
 public class HomePageTest extends BasePageTest {
 
-	@Test(priority = 1)
+	// @Test(priority = 1)
 	public void testHomePage() {
 		driver.get(PropertyLoader.getProperty("url"));
 
@@ -17,5 +15,6 @@ public class HomePageTest extends BasePageTest {
 		homePage.clickSignIn();
 		Assert.assertEquals(driver.getCurrentUrl(), PropertyLoader.getProperty("signInUrl"));
 	}
+
 
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Travel B2C]">
+  <listeners>
+    <listener class-name="b2c.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="LoginFlow(failed)">
+    <classes>
+      <class name="b2c.HomePageLinkTest">
+        <methods>
+          <include name="clickOffersLinkAndVerify"/>
+          <include name="clickToWaterKingdomAndGetWaterKingdomHomePageURL"/>
+          <include name="cleanup"/>
+          <include name="clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- b2c.HomePageLinkTest -->
+    </classes>
+  </test> <!-- LoginFlow(failed) -->
+</suite> <!-- Failed suite [Travel B2C] -->

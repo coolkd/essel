@@ -1,6 +1,11 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Travel B2C">
+	<listeners>
+		<listener class-name="b2c.Listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+
+	</listeners>
 	<test name="BookingFlow">
 		<classes>
 			<class name="b2c.BookingWidgetTest"></class>
@@ -11,6 +16,7 @@
 		<classes>
 			<class name="b2c.LoginPageTest" />
 			<class name="b2c.HomePageTest" />
+			<class name="b2c.HomePageLinkTest" />
 		</classes>
 	</test>
 

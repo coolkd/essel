@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Travel_B2C">
+              <span class="suite-name border-failed">Travel B2C</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Travel_B2C">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Travel_B2C">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Travel_B2C">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Travel_B2C">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Travel_B2C">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Travel_B2C">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Travel_B2C">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 3 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Travel_B2C" class="hide-methods failed suite-Travel_B2C"> (hide)</a> <!-- hide-methods failed suite-Travel_B2C -->
+                      <a href="#" panel-name="suite-Travel_B2C" class="show-methods failed suite-Travel_B2C"> (show)</a> <!-- show-methods failed suite-Travel_B2C -->
+                    </span>
+                    <div class="method-list-content failed suite-Travel_B2C">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.HomePageLinkTest" hash-for-method="clickOffersLinkAndVerify">clickOffersLinkAndVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.HomePageLinkTest" hash-for-method="clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL">clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.HomePageLinkTest" hash-for-method="clickToWaterKingdomAndGetWaterKingdomHomePageURL">clickToWaterKingdomAndGetWaterKingdomHomePageURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Travel_B2C -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Travel_B2C" class="hide-methods passed suite-Travel_B2C"> (hide)</a> <!-- hide-methods passed suite-Travel_B2C -->
+                      <a href="#" panel-name="suite-Travel_B2C" class="show-methods passed suite-Travel_B2C"> (show)</a> <!-- show-methods passed suite-Travel_B2C -->
+                    </span>
+                    <div class="method-list-content passed suite-Travel_B2C">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.SearchPageTest" hash-for-method="EnterPaxDetails">EnterPaxDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.HomePageLinkTest" hash-for-method="clickToBirdParkLinkAndGetBirdParkHomePageURL">clickToBirdParkLinkAndGetBirdParkHomePageURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.HomePageLinkTest" hash-for-method="footerTopMenuLinks">footerTopMenuLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.LoginPageTest" hash-for-method="invalidSignIn">invalidSignIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.LoginPageTest" hash-for-method="passwordValidation">passwordValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.BookingWidgetTest" hash-for-method="selectAdultAndChild">selectAdultAndChild</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.BookingWidgetTest" hash-for-method="selectAdultAndChildWithZero">selectAdultAndChildWithZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.BookingWidgetTest" hash-for-method="selectNextMonthDate">selectNextMonthDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.LoginPageTest" hash-for-method="testCancel">testCancel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.LoginPageTest" hash-for-method="testSignUp">testSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.LoginPageTest" hash-for-method="userNameValidation">userNameValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Travel_B2C" title="b2c.LoginPageTest" hash-for-method="validCredential">validCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Travel_B2C -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Travel_B2C" class="panel Travel_B2C">
+          <div class="suite-Travel_B2C-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">b2c.HomePageLinkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOffersLinkAndVerify">
+                  </a> <!-- clickOffersLinkAndVerify -->
+                  <span class="method-name">clickOffersLinkAndVerify</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [ZOOMCAR SUPER OFFER] but found [ZOOM CAR SUPER OFFER]
+	at b2c.HomePageLinkTest.clickOffersLinkAndVerify(HomePageLinkTest.java:38)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL">
+                  </a> <!-- clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL -->
+                  <span class="method-name">clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [http://www.fab5shopping.in/] but found [http://atlas:hydra@demo.esselworld.in/travel/]
+	at b2c.HomePageLinkTest.clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL(HomePageLinkTest.java:106)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickToWaterKingdomAndGetWaterKingdomHomePageURL">
+                  </a> <!-- clickToWaterKingdomAndGetWaterKingdomHomePageURL -->
+                  <span class="method-name">clickToWaterKingdomAndGetWaterKingdomHomePageURL</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.waterkingdom.in/travel/home] but found [http://www.fab5shopping.in/]
+	at b2c.HomePageLinkTest.clickToWaterKingdomAndGetWaterKingdomHomePageURL(HomePageLinkTest.java:92)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Travel_B2C-class-failed -->
+          <div class="suite-Travel_B2C-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">b2c.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignIn">
+                  </a> <!-- invalidSignIn -->
+                  <span class="method-name">invalidSignIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passwordValidation">
+                  </a> <!-- passwordValidation -->
+                  <span class="method-name">passwordValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCancel">
+                  </a> <!-- testCancel -->
+                  <span class="method-name">testCancel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUp">
+                  </a> <!-- testSignUp -->
+                  <span class="method-name">testSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userNameValidation">
+                  </a> <!-- userNameValidation -->
+                  <span class="method-name">userNameValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredential">
+                  </a> <!-- validCredential -->
+                  <span class="method-name">validCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Travel_B2C-class-passed -->
+          <div class="suite-Travel_B2C-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">b2c.SearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnterPaxDetails">
+                  </a> <!-- EnterPaxDetails -->
+                  <span class="method-name">EnterPaxDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Travel_B2C-class-passed -->
+          <div class="suite-Travel_B2C-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">b2c.HomePageLinkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickToBirdParkLinkAndGetBirdParkHomePageURL">
+                  </a> <!-- clickToBirdParkLinkAndGetBirdParkHomePageURL -->
+                  <span class="method-name">clickToBirdParkLinkAndGetBirdParkHomePageURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="footerTopMenuLinks">
+                  </a> <!-- footerTopMenuLinks -->
+                  <span class="method-name">footerTopMenuLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Travel_B2C-class-passed -->
+          <div class="suite-Travel_B2C-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">b2c.BookingWidgetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectAdultAndChild">
+                  </a> <!-- selectAdultAndChild -->
+                  <span class="method-name">selectAdultAndChild</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectAdultAndChildWithZero">
+                  </a> <!-- selectAdultAndChildWithZero -->
+                  <span class="method-name">selectAdultAndChildWithZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectNextMonthDate">
+                  </a> <!-- selectNextMonthDate -->
+                  <span class="method-name">selectNextMonthDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Travel_B2C-class-passed -->
+        </div> <!-- panel Travel_B2C -->
+        <div panel-name="test-xml-Travel_B2C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/kuldeep/workspace/TravelB2C/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Travel B2C&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;b2c.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BookingFlow&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;b2c.BookingWidgetTest&quot;/&gt;
+      &lt;class name=&quot;b2c.SearchPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BookingFlow --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginFlow&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;b2c.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;b2c.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;b2c.HomePageLinkTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginFlow --&gt;
+&lt;/suite&gt; &lt;!-- Travel B2C --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Travel_B2C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Travel B2C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BookingFlow (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginFlow (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Travel_B2C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Travel B2C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Travel_B2C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Travel B2C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Travel_B2C');
+function tableData_Travel_B2C() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'footerTopMenuLinks')
+data.setCell(0, 2, 'b2c.HomePageLinkTest')
+data.setCell(0, 3, 34684);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'EnterPaxDetails')
+data.setCell(1, 2, 'b2c.SearchPageTest')
+data.setCell(1, 3, 34218);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clickOffersLinkAndVerify')
+data.setCell(2, 2, 'b2c.HomePageLinkTest')
+data.setCell(2, 3, 25221);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickToBirdParkLinkAndGetBirdParkHomePageURL')
+data.setCell(3, 2, 'b2c.HomePageLinkTest')
+data.setCell(3, 3, 12543);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'selectAdultAndChild')
+data.setCell(4, 2, 'b2c.BookingWidgetTest')
+data.setCell(4, 3, 8291);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clickToWaterKingdomAndGetWaterKingdomHomePageURL')
+data.setCell(5, 2, 'b2c.HomePageLinkTest')
+data.setCell(5, 3, 7779);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL')
+data.setCell(6, 2, 'b2c.HomePageLinkTest')
+data.setCell(6, 3, 6783);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validCredential')
+data.setCell(7, 2, 'b2c.LoginPageTest')
+data.setCell(7, 3, 4564);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidSignIn')
+data.setCell(8, 2, 'b2c.LoginPageTest')
+data.setCell(8, 3, 3560);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'userNameValidation')
+data.setCell(9, 2, 'b2c.LoginPageTest')
+data.setCell(9, 3, 2516);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'selectNextMonthDate')
+data.setCell(10, 2, 'b2c.BookingWidgetTest')
+data.setCell(10, 3, 2180);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'selectAdultAndChildWithZero')
+data.setCell(11, 2, 'b2c.BookingWidgetTest')
+data.setCell(11, 3, 2167);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSignUp')
+data.setCell(12, 2, 'b2c.LoginPageTest')
+data.setCell(12, 3, 2077);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCancel')
+data.setCell(13, 2, 'b2c.LoginPageTest')
+data.setCell(13, 3, 1162);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'passwordValidation')
+data.setCell(14, 2, 'b2c.LoginPageTest')
+data.setCell(14, 3, 457);
+window.suiteTableData['Travel_B2C']= { tableData: data, tableDiv: 'times-div-Travel_B2C'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Travel_B2C">
+              </div> <!-- times-div-Travel_B2C -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Travel_B2C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Travel B2C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Travel_B2C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">b2c.SearchPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">cleanup</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">b2c.HomePageLinkTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">cleanup</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">b2c.HomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">cleanup</span>
+                <br/>
+                <span class="ignored-method-name">init</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Travel_B2C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">b2c.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">b2c.BookingWidgetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">5812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectAdultAndChild</span>
+                <span class="method-start">12400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">20697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectAdultAndChildWithZero</span>
+                <span class="method-start">23140 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">25309 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectNextMonthDate</span>
+                <span class="method-start">25905 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">b2c.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">selectNextMonthDate</span>
+                <span class="method-start">28092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">EnterPaxDetails</span>
+                <span class="method-start">30762 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">b2c.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">65018 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidSignIn</span>
+                <span class="method-start">66186 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">69748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordValidation</span>
+                <span class="method-start">71049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">71509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCancel</span>
+                <span class="method-start">72874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">74038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUp</span>
+                <span class="method-start">75173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">77253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">userNameValidation</span>
+                <span class="method-start">78689 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">b2c.HomePageLinkTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickOffersLinkAndVerify</span>
+                <span class="method-start">81207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickToBirdParkLinkAndGetBirdParkHomePageURL</span>
+                <span class="method-start">106961 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickToFab5ShoppingLinkAndGetGetFab5ShoppingHomePageURL</span>
+                <span class="method-start">119508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickToWaterKingdomAndGetWaterKingdomHomePageURL</span>
+                <span class="method-start">126883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">footerTopMenuLinks</span>
+                <span class="method-start">135339 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">b2c.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">goToLoginPage</span>
+                <span class="method-start">170025 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validCredential</span>
+                <span class="method-start">171950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">177301 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

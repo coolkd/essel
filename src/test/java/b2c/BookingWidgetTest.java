@@ -1,5 +1,6 @@
 package b2c;
 
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -34,7 +35,7 @@ public class BookingWidgetTest extends BasePageTest {
 		homePage.selectDate(Integer.parseInt(PropertyLoader.getProperty("visitdate")));
 		homePage.setAdults(Integer.parseInt(PropertyLoader.getProperty("adultcount")));
 		homePage.getSubmit();
-		AssertJUnit.assertTrue(driver.getCurrentUrl().contains("/travel/search"));
+		Assert.assertTrue(driver.getCurrentUrl().contains("/travel/search"));
 	}
 
 	@Test
@@ -47,7 +48,7 @@ public class BookingWidgetTest extends BasePageTest {
 		homePage.setAdults(2);
 		homePage.setChild(2);
 		homePage.getSubmit();
-		AssertJUnit.assertTrue(driver.getCurrentUrl().contains("/travel/search"));
+		Assert.assertTrue(driver.getCurrentUrl().contains("/travel/search"));
 	}
 
 	@Test
@@ -60,6 +61,6 @@ public class BookingWidgetTest extends BasePageTest {
 		homePage.setAdults(0);
 		homePage.setChild(0);
 		homePage.getSubmit();
-		AssertJUnit.assertTrue(driver.getCurrentUrl().contains("/travel/search"));
+		Assert.assertTrue(driver.getCurrentUrl().contains("/travel/search"));
 	}
 }

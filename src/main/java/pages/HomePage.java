@@ -18,8 +18,16 @@ public class HomePage {
 	By adult = By.id("Adult");
 	By child = By.id("Child");
 	By clickToBook = By.id("book");
-	
 
+	/*
+	 * By holiLink = By.xpath("//*[@id=\"offerWidget\"]/div[2]/ul/li[1]/a"); By
+	 * tpcLink = By.xpath("//*[@id=\"offerWidget\"]/div[2]/ul/li[2]/a"); By
+	 * hallTicketLink = By.xpath("//a[contains(text(),'Hall Ticket')]"); By
+	 * terificTuesdayLink = By.xpath("//a[contains(text(),'Terrific Tuesday')]"); By
+	 * freakoutFridatLink = By.xpath("//a[contains(text(),'Freakout Friday')]"); By
+	 * ssccLink = By.xpath("//a[contains(text(),'Super Saver Car Combo')]"); By
+	 * zcsoLink = By.xpath("//a[contains(text(),'Zoom Car Super Offer')]");
+	 */
 	public void getVisitDate() {
 		driver.findElement(widgetCal).click();
 	}
@@ -42,6 +50,7 @@ public class HomePage {
 		driver.findElement(adult).clear();
 		driver.findElement(adult).sendKeys(String.valueOf(count));
 	}
+
 	public void setChild(int count) {
 		driver.findElement(child).clear();
 		driver.findElement(child).sendKeys(String.valueOf(count));
@@ -50,6 +59,5 @@ public class HomePage {
 	public void getSubmit() {
 		driver.findElement(clickToBook).click();
 	}
-	
 
 }
